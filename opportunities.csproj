@@ -193,7 +193,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
-    <Content Include="App_Data\Chloe.sdf" />
     <Content Include="bower_components\angular-ui-tinymce\src\tinymce.js" />
     <Content Include="bower_components\tinymce-dist\tinymce.js" />
     <Content Include="dist\app.css" />
@@ -242,16 +241,36 @@
     <Content Include="wwwroot\core\core.css" />
     <Content Include="wwwroot\footer\footer.component.css" />
     <Content Include="wwwroot\footer\footer.component.html" />
-    <Content Include="wwwroot\header\header.component.css" />
-    <Content Include="wwwroot\header\header.component.html" />
-    <Content Include="wwwroot\job\job-editor.component.css" />
-    <Content Include="wwwroot\job\job-editor.component.html" />
-    <Content Include="wwwroot\job\job-list.component.css" />
-    <Content Include="wwwroot\job\job-list.component.html" />
-    <Content Include="wwwroot\job\job.component.css" />
-    <Content Include="wwwroot\job\job.component.html" />
-    <Content Include="wwwroot\job\jobs-container.component.css" />
-    <Content Include="wwwroot\job\jobs-container.component.html" />
+    <Content Include="wwwroot\header\header.component.css">
+      <DependentUpon>header.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\header\header.component.html">
+      <DependentUpon>header.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\job\job-editor.component.css">
+      <DependentUpon>job-editor.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\job\job-editor.component.html">
+      <DependentUpon>job-editor.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\job\job-list.component.css">
+      <DependentUpon>job-list.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\job\job-list.component.html">
+      <DependentUpon>job-list.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\job\job.component.css">
+      <DependentUpon>job.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\job\job.component.html">
+      <DependentUpon>job.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\job\jobs-container.component.css">
+      <DependentUpon>jobs-container.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\job\jobs-container.component.html">
+      <DependentUpon>jobs-container.component.ts</DependentUpon>
+    </Content>
     <Content Include="wwwroot\layout\admin-container.component.css">
       <DependentUpon>admin-container.component.ts</DependentUpon>
     </Content>
@@ -451,7 +470,9 @@
     <Compile Include="Server\Utils\Logger.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="node_modules\rx\ts\rx.all.d.ts" />
     <TypeScriptCompile Include="typings\angularjs\angular-route.d.ts" />
@@ -534,6 +555,7 @@
     <TypeScriptCompile Include="wwwroot\job\job-list.component.ts" />
     <TypeScriptCompile Include="wwwroot\job\job.actions.ts" />
     <TypeScriptCompile Include="wwwroot\job\job.component.ts" />
+    <TypeScriptCompile Include="wwwroot\job\job-type.model.ts" />
     <TypeScriptCompile Include="wwwroot\job\job.model.ts" />
     <TypeScriptCompile Include="wwwroot\job\job.module.ts" />
     <TypeScriptCompile Include="wwwroot\job\job.reducers.ts" />
