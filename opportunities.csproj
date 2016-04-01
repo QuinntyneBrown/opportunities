@@ -238,6 +238,14 @@
     <Content Include="wwwroot\button\button.module.js" />
     <Content Include="wwwroot\button\button.reducers.js" />
     <Content Include="wwwroot\button\button.service.js" />
+    <Content Include="wwwroot\company\company-editor.component.css" />
+    <Content Include="wwwroot\company\company-editor.component.html" />
+    <Content Include="wwwroot\company\company-list.component.css" />
+    <Content Include="wwwroot\company\company-list.component.html" />
+    <Content Include="wwwroot\company\company.component.css" />
+    <Content Include="wwwroot\company\company.component.html" />
+    <Content Include="wwwroot\company\companys-container.component.css" />
+    <Content Include="wwwroot\company\companys-container.component.html" />
     <Content Include="wwwroot\core\core.css" />
     <Content Include="wwwroot\footer\footer.component.css" />
     <Content Include="wwwroot\footer\footer.component.html" />
@@ -385,6 +393,7 @@
     <Compile Include="Server\Config\Contracts\IConfigurationProvider.cs" />
     <Compile Include="Server\Controllers\AccountManagerController.cs" />
     <Compile Include="Server\Controllers\AgencyController.cs" />
+    <Compile Include="Server\Controllers\CompanyController.cs" />
     <Compile Include="Server\Controllers\JobController.cs" />
     <Compile Include="Server\Controllers\MessageController.cs" />
     <Compile Include="Server\Controllers\RecruiterController.cs" />
@@ -405,6 +414,9 @@
     <Compile Include="Server\Dtos\AgencyAddOrUpdateRequestDto.cs" />
     <Compile Include="Server\Dtos\AgencyAddOrUpdateResponseDto.cs" />
     <Compile Include="Server\Dtos\AgencyDto.cs" />
+    <Compile Include="Server\Dtos\CompanyAddOrUpdateRequestDto.cs" />
+    <Compile Include="Server\Dtos\CompanyAddOrUpdateResponseDto.cs" />
+    <Compile Include="Server\Dtos\CompanyDto.cs" />
     <Compile Include="Server\Dtos\JobAddOrUpdateRequestDto.cs" />
     <Compile Include="Server\Dtos\JobAddOrUpdateResponseDto.cs" />
     <Compile Include="Server\Dtos\JobDto.cs" />
@@ -422,6 +434,7 @@
     <Compile Include="Server\Dtos\TokenDto.cs" />
     <Compile Include="Server\Exceptions\AccountManagerNotFound.cs" />
     <Compile Include="Server\Exceptions\AgencyNotFound.cs" />
+    <Compile Include="Server\Exceptions\CompanyNotFound.cs" />
     <Compile Include="Server\Exceptions\JobNotFound.cs" />
     <Compile Include="Server\Exceptions\MessageNotFound.cs" />
     <Compile Include="Server\Exceptions\NotFoundException.cs" />
@@ -431,6 +444,7 @@
     <Compile Include="Server\Models\AccountManager.cs" />
     <Compile Include="Server\Models\Agency.cs" />
     <Compile Include="Server\Models\BaseEntity.cs" />
+    <Compile Include="Server\Models\Company.cs" />
     <Compile Include="Server\Models\Job.cs" />
     <Compile Include="Server\Models\JobType.cs" />
     <Compile Include="Server\Models\Message.cs" />
@@ -443,10 +457,12 @@
     <Compile Include="Server\Services\AgencyService.cs" />
     <Compile Include="Server\Services\Cache.cs" />
     <Compile Include="Server\Services\CacheProvider.cs" />
+    <Compile Include="Server\Services\CompanyService.cs" />
     <Compile Include="Server\Services\Contracts\IAccountManagerService.cs" />
     <Compile Include="Server\Services\Contracts\IAgencyService.cs" />
     <Compile Include="Server\Services\Contracts\ICache.cs" />
     <Compile Include="Server\Services\Contracts\ICacheProvider.cs" />
+    <Compile Include="Server\Services\Contracts\ICompanyService.cs" />
     <Compile Include="Server\Services\Contracts\IEncryptionService.cs" />
     <Compile Include="Server\Services\Contracts\IIdentityService.cs" />
     <Compile Include="Server\Services\Contracts\IJobService.cs" />
@@ -512,6 +528,15 @@
     <TypeScriptCompile Include="wwwroot\button\button.module.ts" />
     <TypeScriptCompile Include="wwwroot\button\button.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\button\button.service.ts" />
+    <TypeScriptCompile Include="wwwroot\company\company-editor.component.ts" />
+    <TypeScriptCompile Include="wwwroot\company\company-list.component.ts" />
+    <TypeScriptCompile Include="wwwroot\company\company.actions.ts" />
+    <TypeScriptCompile Include="wwwroot\company\company.component.ts" />
+    <TypeScriptCompile Include="wwwroot\company\company.model.ts" />
+    <TypeScriptCompile Include="wwwroot\company\company.module.ts" />
+    <TypeScriptCompile Include="wwwroot\company\company.reducers.ts" />
+    <TypeScriptCompile Include="wwwroot\company\company.service.ts" />
+    <TypeScriptCompile Include="wwwroot\company\companys-container.component.ts" />
     <TypeScriptCompile Include="wwwroot\core\%24q.ts" />
     <TypeScriptCompile Include="wwwroot\core\action-creator.ts" />
     <TypeScriptCompile Include="wwwroot\core\add-or-update.ts" />

@@ -17,8 +17,12 @@ namespace Chloe.Server.Models
         public double? HourlySalary { get; set; }
         [ForeignKey("JobType")]
         public int? JobTypeId { get; set; }
-        public JobType JobType { get; set; }
+        [ForeignKey("Company")]
+        public int? CompanyId { get; set; }
         public int Rating { get; set; }
+
         public ICollection<Technology> Technologies { get; set; }
+        public JobType JobType { get; set; }
+        public Company Company { get; set; }
     }
 }

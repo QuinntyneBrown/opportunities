@@ -18,6 +18,7 @@ require("./agency/agency.module");
 require("./account-manager/account-manager.module");
 require("./message/message.module");
 require("./technology/technology.module");
+require("./company/company.module");
 
 var app: any = angular.module("app", [
     "app.core",
@@ -33,6 +34,7 @@ var app: any = angular.module("app", [
     "app.modal",
     "app.layout",
 
+    "app.company",
     "app.job",
     "app.agency",
     "app.recruiter",

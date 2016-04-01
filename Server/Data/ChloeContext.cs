@@ -22,6 +22,7 @@ namespace Chloe.Server.Data
         public DbSet<AccountManager> AccountManagers { get; set; }
         public DbSet<Message> Messages { get; set; }
         public DbSet<Technology> Technologies { get; set; }
+        public DbSet<Company> Companies { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
      

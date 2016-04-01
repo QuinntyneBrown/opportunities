@@ -12,6 +12,7 @@ namespace Chloe.Server.Data.Contracts
         IRepository<AccountManager> AccountManagers { get; }
         IRepository<Message> Messages { get; }
         IRepository<Technology> Technologies { get; }
+        IRepository<Company> Companies { get; }
 
         void SaveChanges();
     }

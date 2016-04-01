@@ -49,7 +49,7 @@ gulp.task("webpack", function () {
                     test: /\.css$/, exclude: [/node_modules/], loader: "style-loader!css-loader"
                 },
                 {
-                    test: /\.html$/,loader: "raw-loader"
+                    test: /\.html$/,loader: "raw"
                 }
             ]
         }
