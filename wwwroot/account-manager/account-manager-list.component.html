@@ -1,0 +1,15 @@
+<div class="accountManagerList">
+    <div class="accountManagerList-header">
+        <h1>AccountManagers</h1>
+    </div>
+    
+    <div data-ng-repeat="entity in vm.entities" class="accountManagerList-item">
+        <div class="accountManagerList-name">
+            {{ entity.name }}
+        </div>
+        <div class="accountManagerList-actions">
+            <span data-ng-click="vm.edit({ entity: this.entity })">edit</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span data-ng-click="vm.remove({ entity: this.entity })">remove</span>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+</div>
