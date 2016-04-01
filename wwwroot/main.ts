@@ -16,6 +16,7 @@ require("./recruiter/recruiter.module");
 require("./agency/agency.module");
 require("./account-manager/account-manager.module");
 require("./message/message.module");
+require("./technology/technology.module");
 
 var app: any = angular.module("app", [
     "app.core",
@@ -34,7 +35,8 @@ var app: any = angular.module("app", [
     "app.agency",
     "app.recruiter",
     "app.accountManager",
-    "app.message"
+    "app.message",
+    "app.technology"
 ]);
 
 app.config(["initialStateProvider", "localStorageManagerProvider", (initialStateProvider, localStorageManagerProvider) => {

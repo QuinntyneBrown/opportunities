@@ -33,6 +33,7 @@ namespace Chloe.Server
             container.RegisterType<IRecruiterService, RecruiterService>();
             container.RegisterType<IAccountManagerService, AccountManagerService>();
             container.RegisterType<IJobService, JobService>();
+            container.RegisterType<ITechnologyService, TechnologyService>();
 
             container.RegisterType<IUserService, UserService>(new HierarchicalLifetimeManager(),
                 new Interceptor<InterfaceInterceptor>(),

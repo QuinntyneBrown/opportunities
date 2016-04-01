@@ -34,6 +34,7 @@ namespace Chloe.Server.Data
         public IRepository<Agency> Agencies { get { return GetStandardRepo<Agency>(); } }
         public IRepository<AccountManager> AccountManagers { get { return GetStandardRepo<AccountManager>(); } }
         public IRepository<Message> Messages { get { return GetStandardRepo<Message>(); } }
+        public IRepository<Technology> Technologies { get { return GetStandardRepo<Technology>(); } }
 
         protected void ConfigureDbContext(IDbContext dbContext)
         {
