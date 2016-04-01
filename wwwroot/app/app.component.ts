@@ -2,7 +2,7 @@ import { CanActivate, Component, ChangeDetectionStrategy } from "../core";
 import { AppActionCreator } from "./app.actions";
 
 @Component({
-    templateUrl: "wwwroot/app/app.component.html",
+    template: require("./app.component.html"),
     selector: "app",
     viewProviders: ["appActionCreator"],
     changeDetection: ChangeDetectionStrategy.OnPush

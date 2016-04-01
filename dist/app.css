@@ -2,6 +2,10 @@
 
 
 
+
+
+
+
 body {
     font-family: 'Lato', sans-serif;
     color: #333;
@@ -14,10 +18,6 @@ body {
     padding-right:30px;
     padding-left:30px;
 }
-
-
-
-
 
 .button {
     margin-top:15px;

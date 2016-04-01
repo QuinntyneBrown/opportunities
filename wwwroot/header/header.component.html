@@ -1,5 +1,14 @@
 <div class="header">
-    <a href="#/">Home</a>
-    <a href="#/login">Login</a>
-    <a href="#/register">Register</a>
+    
+    <div class="links" data-ng-if="!vm.isAdmin()">
+        <a href="#/login">Log in</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="#/login">Register</a>
+    </div>
+    <div class="links" data-ng-if="vm.isAdmin()">
+        <a href="#/home">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="#/admin">Jobs</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="#/admin/technologies">Technologies</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="#/admin/agencies">Agencies</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="#/login">Log out</a>
+    </div>
 </div>

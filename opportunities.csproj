@@ -225,8 +225,12 @@
     <Content Include="wwwroot\agency\agency.component.html" />
     <Content Include="wwwroot\agency\agencys-container.component.css" />
     <Content Include="wwwroot\agency\agencys-container.component.html" />
-    <Content Include="wwwroot\app\app.component.css" />
-    <Content Include="wwwroot\app\app.component.html" />
+    <Content Include="wwwroot\app\app.component.css">
+      <DependentUpon>app.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\app\app.component.html">
+      <DependentUpon>app.component.ts</DependentUpon>
+    </Content>
     <Content Include="wwwroot\backdrop\backdrop.actions.js" />
     <Content Include="wwwroot\backdrop\backdrop.module.js" />
     <Content Include="wwwroot\backdrop\backdrop.reducers.js" />
@@ -259,8 +263,12 @@
     <Content Include="wwwroot\company\companys-container.component.css" />
     <Content Include="wwwroot\company\companys-container.component.html" />
     <Content Include="wwwroot\core\core.css" />
-    <Content Include="wwwroot\footer\footer.component.css" />
-    <Content Include="wwwroot\footer\footer.component.html" />
+    <Content Include="wwwroot\footer\footer.component.css">
+      <DependentUpon>footer.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\footer\footer.component.html">
+      <DependentUpon>footer.component.ts</DependentUpon>
+    </Content>
     <Content Include="wwwroot\header\header.component.css">
       <DependentUpon>header.component.ts</DependentUpon>
     </Content>
