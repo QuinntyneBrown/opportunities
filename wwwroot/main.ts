@@ -9,7 +9,8 @@ require("./header/header.module");
 require("./modal/modal.module");
 require("./tabs/tabs.module");
 require("./login/login.module");
-require("./home-page/home-page.module");
+require("./registration/registration.module");
+require("./layout/layout.module");
 
 require("./job/job.module");
 require("./recruiter/recruiter.module");
@@ -28,8 +29,9 @@ var app: any = angular.module("app", [
     "app.header",
     "app.tabs",
     "app.login",
+    "app.registration",
     "app.modal",
-    "app.homePage",
+    "app.layout",
 
     "app.job",
     "app.agency",
@@ -52,9 +54,12 @@ app.config(["initialStateProvider", "localStorageManagerProvider", (initialState
 
 app.config(["$routeProvider", ($routeProvider: angular.route.IRouteProvider) => {
     $routeProvider
-        .when("/", { template: "<home-page></home-page>" })
-        .when("/register", { template: "<registration-page></registration>" })
-        .when("/login", { template: "<login-page></login-page>" });
+        .when("/", { template: "<home-container></home-container>" })
+        .when("/register", { template: "<registration-container></registration-container>" })
+        .when("/login", { template: "<login-container></login-container>" });
+
+    $routeProvider
+        .when("/admin", { template: "<admin-container></admin-container>" });
 }]);
 
 app.config(["apiEndpointProvider", (apiEndpointProvider) => {

@@ -193,6 +193,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
+    <Content Include="App_Data\Chloe.sdf" />
     <Content Include="bower_components\angular-ui-tinymce\src\tinymce.js" />
     <Content Include="bower_components\tinymce-dist\tinymce.js" />
     <Content Include="dist\app.css" />
@@ -243,8 +244,6 @@
     <Content Include="wwwroot\footer\footer.component.html" />
     <Content Include="wwwroot\header\header.component.css" />
     <Content Include="wwwroot\header\header.component.html" />
-    <Content Include="wwwroot\home-page\home-page.component.css" />
-    <Content Include="wwwroot\home-page\home-page.component.html" />
     <Content Include="wwwroot\job\job-editor.component.css" />
     <Content Include="wwwroot\job\job-editor.component.html" />
     <Content Include="wwwroot\job\job-list.component.css" />
@@ -253,7 +252,21 @@
     <Content Include="wwwroot\job\job.component.html" />
     <Content Include="wwwroot\job\jobs-container.component.css" />
     <Content Include="wwwroot\job\jobs-container.component.html" />
-    <Content Include="wwwroot\login\login-page.component.html" />
+    <Content Include="wwwroot\layout\admin-container.component.css">
+      <DependentUpon>admin-container.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\layout\admin-container.component.html">
+      <DependentUpon>admin-container.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\layout\home-container.component.css">
+      <DependentUpon>home-container.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\layout\home-container.component.html">
+      <DependentUpon>home-container.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\login\login-container.component.html">
+      <DependentUpon>login-container.component.ts</DependentUpon>
+    </Content>
     <Content Include="wwwroot\login\login.component.css" />
     <Content Include="wwwroot\login\login.component.html" />
     <Content Include="wwwroot\message\message-editor.component.css" />
@@ -272,9 +285,12 @@
     <Content Include="wwwroot\recruiter\recruiter.component.html" />
     <Content Include="wwwroot\recruiter\recruiters-container.component.css" />
     <Content Include="wwwroot\recruiter\recruiters-container.component.html" />
-    <Content Include="wwwroot\registration\registration-page.component.html" />
-    <Content Include="wwwroot\registration\registration.component.css" />
-    <Content Include="wwwroot\registration\registration.component.html" />
+    <Content Include="wwwroot\registration\registration-container.component.html">
+      <DependentUpon>registration-container.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\registration\registration.component.css">
+      <DependentUpon>registration.component.ts</DependentUpon>
+    </Content>
     <Content Include="wwwroot\backdrop\backdrop.actions.js.map" />
     <Content Include="wwwroot\backdrop\backdrop.module.js.map" />
     <Content Include="wwwroot\backdrop\backdrop.reducers.js.map" />
@@ -284,6 +300,9 @@
     <Content Include="wwwroot\button\button.module.js.map" />
     <Content Include="wwwroot\button\button.reducers.js.map" />
     <Content Include="wwwroot\button\button.service.js.map" />
+    <Content Include="wwwroot\registration\registration.component.html">
+      <DependentUpon>registration.component.ts</DependentUpon>
+    </Content>
     <Content Include="wwwroot\router-outlet\router-outlet.component.js.map" />
     <Content Include="wwwroot\router-outlet\router-outlet.module.js.map" />
     <None Include="_bin_deployableAssemblies\amd64\sqlcese40.dll" />
@@ -432,9 +451,7 @@
     <Compile Include="Server\Utils\Logger.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <TypeScriptCompile Include="node_modules\rx\ts\rx.all.d.ts" />
     <TypeScriptCompile Include="typings\angularjs\angular-route.d.ts" />
@@ -513,11 +530,6 @@
     <TypeScriptCompile Include="wwwroot\header\header.module.ts" />
     <TypeScriptCompile Include="wwwroot\header\header.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\header\header.service.ts" />
-    <TypeScriptCompile Include="wwwroot\home-page\home-page.actions.ts" />
-    <TypeScriptCompile Include="wwwroot\home-page\home-page.component.ts" />
-    <TypeScriptCompile Include="wwwroot\home-page\home-page.module.ts" />
-    <TypeScriptCompile Include="wwwroot\home-page\home-page.reducers.ts" />
-    <TypeScriptCompile Include="wwwroot\home-page\home-page.service.ts" />
     <TypeScriptCompile Include="wwwroot\job\job-editor.component.ts" />
     <TypeScriptCompile Include="wwwroot\job\job-list.component.ts" />
     <TypeScriptCompile Include="wwwroot\job\job.actions.ts" />
@@ -527,7 +539,10 @@
     <TypeScriptCompile Include="wwwroot\job\job.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\job\job.service.ts" />
     <TypeScriptCompile Include="wwwroot\job\jobs-container.component.ts" />
-    <TypeScriptCompile Include="wwwroot\login\login-page.component.ts" />
+    <TypeScriptCompile Include="wwwroot\layout\admin-container.component.ts" />
+    <TypeScriptCompile Include="wwwroot\layout\home-container.component.ts" />
+    <TypeScriptCompile Include="wwwroot\layout\layout.module.ts" />
+    <TypeScriptCompile Include="wwwroot\login\login-container.component.ts" />
     <TypeScriptCompile Include="wwwroot\login\login.actions.ts" />
     <TypeScriptCompile Include="wwwroot\login\login.component.ts" />
     <TypeScriptCompile Include="wwwroot\login\login.module.ts" />
@@ -556,7 +571,7 @@
     <TypeScriptCompile Include="wwwroot\recruiter\recruiter.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\recruiter\recruiter.service.ts" />
     <TypeScriptCompile Include="wwwroot\recruiter\recruiters-container.component.ts" />
-    <TypeScriptCompile Include="wwwroot\registration\registration-page.component.ts" />
+    <TypeScriptCompile Include="wwwroot\registration\registration-container.component.ts" />
     <TypeScriptCompile Include="wwwroot\registration\registration.actions.ts" />
     <TypeScriptCompile Include="wwwroot\registration\registration.component.ts" />
     <TypeScriptCompile Include="wwwroot\registration\registration.module.ts" />

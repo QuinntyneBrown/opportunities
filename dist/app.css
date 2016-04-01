@@ -2,10 +2,6 @@
 
 
 
-
-
-
-
 body {
     font-family: 'Lato', sans-serif;
     color: #333;
@@ -19,6 +15,10 @@ body {
     padding-left:30px;
 }
 
+
+
+
+
 .button {
     margin-top:15px;
     margin-bottom:30px;
@@ -30,6 +30,15 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
 .input-field {
     padding-right:15px;
     padding-left:15px;
@@ -38,17 +47,6 @@ body {
     min-width:200px;
     margin-bottom:15px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -70,5 +68,12 @@ body {
 .tabs-contentInActive {
     display:none;
 }
+
+
+
+
+
+
+
 
 
