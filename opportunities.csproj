@@ -238,12 +238,24 @@
     <Content Include="wwwroot\button\button.module.js" />
     <Content Include="wwwroot\button\button.reducers.js" />
     <Content Include="wwwroot\button\button.service.js" />
-    <Content Include="wwwroot\company\company-editor.component.css" />
-    <Content Include="wwwroot\company\company-editor.component.html" />
-    <Content Include="wwwroot\company\company-list.component.css" />
-    <Content Include="wwwroot\company\company-list.component.html" />
-    <Content Include="wwwroot\company\company.component.css" />
-    <Content Include="wwwroot\company\company.component.html" />
+    <Content Include="wwwroot\company\company-editor.component.css">
+      <DependentUpon>company-editor.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\company\company-editor.component.html">
+      <DependentUpon>company-editor.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\company\company-list.component.css">
+      <DependentUpon>company-list.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\company\company-list.component.html">
+      <DependentUpon>company-list.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\company\company.component.css">
+      <DependentUpon>company.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\company\company.component.html">
+      <DependentUpon>company.component.ts</DependentUpon>
+    </Content>
     <Content Include="wwwroot\company\companys-container.component.css" />
     <Content Include="wwwroot\company\companys-container.component.html" />
     <Content Include="wwwroot\core\core.css" />
