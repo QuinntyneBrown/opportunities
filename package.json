@@ -1,14 +1,14 @@
 {
   "name": "opportunities",
   "version": "1.0.0",
-  "description": "Future",
+  "description": "Opportunities",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/QuinntyneBrown/future.git"
+    "url": "git+https://github.com/QuinntyneBrown/opportunities.git"
   },
   "author": "",
   "license": "ISC",

@@ -25,6 +25,13 @@ namespace Chloe.Server.Services
                 .FirstOrDefault();
             if (entity == null) repository.Add(entity = new Job());
             entity.Name = request.Name;
+            entity.DatePosted = request.DatePosted;
+            entity.Description = request.Description;
+            entity.AnnualSalary = request.AnnualSalary;
+            entity.HourlySalary = request.HourlySalary;
+            entity.JobTypeId = request.JobTypeId;
+            entity.CompanyId = request.CompanyId;
+            entity.Rating = request.Rating;
             uow.SaveChanges();
             return new JobAddOrUpdateResponseDto(entity);
         }

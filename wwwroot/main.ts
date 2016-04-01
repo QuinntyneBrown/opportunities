@@ -61,7 +61,7 @@ app.config(["$routeProvider", ($routeProvider: angular.route.IRouteProvider) => 
         .when("/login", { template: "<login-container></login-container>" });
 
     $routeProvider
-        .when("/admin", { template: "<admin-container></admin-container>" });
+        .when("/admin", { template: "<jobs-container></jobs-container>" });
 }]);
 
 app.config(["apiEndpointProvider", (apiEndpointProvider) => {

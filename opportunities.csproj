@@ -440,6 +440,7 @@
     <Compile Include="Server\Dtos\JobAddOrUpdateRequestDto.cs" />
     <Compile Include="Server\Dtos\JobAddOrUpdateResponseDto.cs" />
     <Compile Include="Server\Dtos\JobDto.cs" />
+    <Compile Include="Server\Dtos\JobTypeDto.cs" />
     <Compile Include="Server\Dtos\MessageAddOrUpdateRequestDto.cs" />
     <Compile Include="Server\Dtos\MessageAddOrUpdateResponseDto.cs" />
     <Compile Include="Server\Dtos\MessageDto.cs" />
