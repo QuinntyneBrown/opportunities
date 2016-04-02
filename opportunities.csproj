@@ -189,9 +189,6 @@
     <Content Include=".gitignore" />
     <Content Include="bower_components\angular-ui-tinymce\src\tinymce.js" />
     <Content Include="bower_components\tinymce-dist\tinymce.js" />
-    <Content Include="dist\app.css" />
-    <Content Include="dist\app.js" />
-    <Content Include="dist\app.templates.js" />
     <Content Include="gulpfile.js" />
     <Content Include="index.html" />
     <Content Include="lib\angular-route.js" />
@@ -321,10 +318,10 @@
     <Content Include="wwwroot\technology\technology.component.html" />
     <Content Include="wwwroot\technology\technologys-container.component.css" />
     <Content Include="wwwroot\technology\technologys-container.component.html" />
-    <Content Include="wwwroot\layout\admin-container.component.css">
+    <Content Include="wwwroot\admin\admin-container.component.css">
       <DependentUpon>admin-container.component.ts</DependentUpon>
     </Content>
-    <Content Include="wwwroot\layout\admin-container.component.html">
+    <Content Include="wwwroot\admin\admin-container.component.html">
       <DependentUpon>admin-container.component.ts</DependentUpon>
     </Content>
     <Content Include="wwwroot\layout\home-container.component.css">
@@ -507,6 +504,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="dist\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="node_modules\rx\ts\rx.all.d.ts" />
@@ -524,6 +522,7 @@
     <TypeScriptCompile Include="wwwroot\account-manager\account-manager.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\account-manager\account-manager.service.ts" />
     <TypeScriptCompile Include="wwwroot\account-manager\account-managers-container.component.ts" />
+    <TypeScriptCompile Include="wwwroot\admin\admin.module.ts" />
     <TypeScriptCompile Include="wwwroot\agency\agency-editor.component.ts" />
     <TypeScriptCompile Include="wwwroot\agency\agency-list.component.ts" />
     <TypeScriptCompile Include="wwwroot\agency\agency.actions.ts" />
@@ -632,7 +631,7 @@
     <TypeScriptCompile Include="wwwroot\technology\technology.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\technology\technology.service.ts" />
     <TypeScriptCompile Include="wwwroot\technology\technologys-container.component.ts" />
-    <TypeScriptCompile Include="wwwroot\layout\admin-container.component.ts" />
+    <TypeScriptCompile Include="wwwroot\admin\admin-container.component.ts" />
     <TypeScriptCompile Include="wwwroot\layout\home-container.component.ts" />
     <TypeScriptCompile Include="wwwroot\layout\layout.module.ts" />
     <TypeScriptCompile Include="wwwroot\login\login-container.component.ts" />

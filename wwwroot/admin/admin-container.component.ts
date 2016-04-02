@@ -1,7 +1,8 @@
 ﻿import { CanActivate, Component, ChangeDetectionStrategy } from "../core";
 
 @Component({
-    templateUrl: "wwwroot/layout/admin-container.component.html",
+    template: require("./admin-container.component.html"),
+    styles: [require("./admin-container.component.css")],
     selector: "admin-container",
     changeDetection: ChangeDetectionStrategy.OnPush
 })

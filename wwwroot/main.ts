@@ -2,6 +2,7 @@
 require("./router-outlet/router-outlet.module");
 
 require("./app/app.module");
+require("./admin/admin.module");
 require("./backdrop/backdrop.module");
 require("./button/button.module");
 
@@ -25,6 +26,7 @@ var app: any = angular.module("app", [
     "app.routerOutlet",
 
     "app.app",
+    "app.admin",
     "app.backdrop",
     "app.button",
     "app.header",
@@ -61,7 +63,7 @@ app.config(["$routeProvider", ($routeProvider: angular.route.IRouteProvider) => 
         .when("/login", { template: "<login-container></login-container>" });
 
     $routeProvider
-        .when("/admin", { template: "<jobs-container></jobs-container>" });
+        .when("/admin", { template: "<admin-container></admin-container>" });
 }]);
 
 app.config(["apiEndpointProvider", (apiEndpointProvider) => {

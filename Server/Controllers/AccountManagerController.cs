@@ -24,7 +24,7 @@ namespace Chloe.Server.Controllers
         [Route("get")]
         [AllowAnonymous]
         [HttpGet]
-        public IHttpActionResult Get(AccountManagerAddOrUpdateRequestDto dto) { return Ok(this.service.Get()); }
+        public IHttpActionResult Get() { return Ok(this.service.Get()); }
 
 		[Route("getById")]
         [HttpGet]
