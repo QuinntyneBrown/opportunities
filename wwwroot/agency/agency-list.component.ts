@@ -1,10 +1,8 @@
-require("./agency-list.component.css");
-
 import { CanActivate, ChangeDetectionStrategy, Component } from "../core";
 
 @Component({
-    templateUrl: "wwwroot/agency/agency-list.component.html",
-	styleUrls: ["wwwroot/agency/agency-list.component.css"],
+    template: require("./agency-list.component.html"),
+    styles: require("./agency-list.component.css"),
     selector: "agency-list",
     inputs: ['entities','edit','remove'],
 	changeDetection: ChangeDetectionStrategy.OnPush

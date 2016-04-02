@@ -1,10 +1,8 @@
-require("./recruiter-list.component.css");
-
 import { CanActivate, ChangeDetectionStrategy, Component } from "../core";
 
 @Component({
-    templateUrl: "wwwroot/recruiter/recruiter-list.component.html",
-	styleUrls: ["wwwroot/recruiter/recruiter-list.component.css"],
+    template: require("./recruiter-list.component.html"),
+    styles: require("./recruiter-list.component.css"),
     selector: "recruiter-list",
     inputs: ['entities','edit','remove'],
 	changeDetection: ChangeDetectionStrategy.OnPush

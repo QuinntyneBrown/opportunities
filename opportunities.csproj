@@ -203,14 +203,30 @@
     <Content Include="node_modules\angular-sanitize\angular-sanitize.js" />
     <Content Include="packages.config" />
     <Content Include="tsconfig.json" />
-    <Content Include="wwwroot\account-manager\account-manager-editor.component.css" />
-    <Content Include="wwwroot\account-manager\account-manager-editor.component.html" />
-    <Content Include="wwwroot\account-manager\account-manager-list.component.css" />
-    <Content Include="wwwroot\account-manager\account-manager-list.component.html" />
-    <Content Include="wwwroot\account-manager\account-manager.component.css" />
-    <Content Include="wwwroot\account-manager\account-manager.component.html" />
-    <Content Include="wwwroot\account-manager\account-managers-container.component.css" />
-    <Content Include="wwwroot\account-manager\account-managers-container.component.html" />
+    <Content Include="wwwroot\account-manager\account-manager-editor.component.css">
+      <DependentUpon>account-manager-editor.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\account-manager\account-manager-editor.component.html">
+      <DependentUpon>account-manager-editor.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\account-manager\account-manager-list.component.css">
+      <DependentUpon>account-manager-list.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\account-manager\account-manager-list.component.html">
+      <DependentUpon>account-manager-list.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\account-manager\account-manager.component.css">
+      <DependentUpon>account-manager.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\account-manager\account-manager.component.html">
+      <DependentUpon>account-manager.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\account-manager\account-managers-container.component.css">
+      <DependentUpon>account-managers-container.component.ts</DependentUpon>
+    </Content>
+    <Content Include="wwwroot\account-manager\account-managers-container.component.html">
+      <DependentUpon>account-managers-container.component.ts</DependentUpon>
+    </Content>
     <Content Include="wwwroot\agency\agency-editor.component.css" />
     <Content Include="wwwroot\agency\agency-editor.component.html" />
     <Content Include="wwwroot\agency\agency-list.component.css" />
@@ -236,24 +252,12 @@
     <Content Include="wwwroot\button\button.module.js" />
     <Content Include="wwwroot\button\button.reducers.js" />
     <Content Include="wwwroot\button\button.service.js" />
-    <Content Include="wwwroot\company\company-editor.component.css">
-      <DependentUpon>company-editor.component.ts</DependentUpon>
-    </Content>
-    <Content Include="wwwroot\company\company-editor.component.html">
-      <DependentUpon>company-editor.component.ts</DependentUpon>
-    </Content>
-    <Content Include="wwwroot\company\company-list.component.css">
-      <DependentUpon>company-list.component.ts</DependentUpon>
-    </Content>
-    <Content Include="wwwroot\company\company-list.component.html">
-      <DependentUpon>company-list.component.ts</DependentUpon>
-    </Content>
-    <Content Include="wwwroot\company\company.component.css">
-      <DependentUpon>company.component.ts</DependentUpon>
-    </Content>
-    <Content Include="wwwroot\company\company.component.html">
-      <DependentUpon>company.component.ts</DependentUpon>
-    </Content>
+    <Content Include="wwwroot\company\company-editor.component.css" />
+    <Content Include="wwwroot\company\company-editor.component.html" />
+    <Content Include="wwwroot\company\company-list.component.css" />
+    <Content Include="wwwroot\company\company-list.component.html" />
+    <Content Include="wwwroot\company\company.component.css" />
+    <Content Include="wwwroot\company\company.component.html" />
     <Content Include="wwwroot\company\companys-container.component.css" />
     <Content Include="wwwroot\company\companys-container.component.html" />
     <Content Include="wwwroot\core\core.css" />
@@ -293,6 +297,30 @@
     <Content Include="wwwroot\job\jobs-container.component.html">
       <DependentUpon>jobs-container.component.ts</DependentUpon>
     </Content>
+    <Content Include="wwwroot\message\message-editor.component.css" />
+    <Content Include="wwwroot\message\message-editor.component.html" />
+    <Content Include="wwwroot\message\message-list.component.css" />
+    <Content Include="wwwroot\message\message-list.component.html" />
+    <Content Include="wwwroot\message\message.component.css" />
+    <Content Include="wwwroot\message\message.component.html" />
+    <Content Include="wwwroot\message\messages-container.component.css" />
+    <Content Include="wwwroot\message\messages-container.component.html" />
+    <Content Include="wwwroot\recruiter\recruiter-editor.component.css" />
+    <Content Include="wwwroot\recruiter\recruiter-editor.component.html" />
+    <Content Include="wwwroot\recruiter\recruiter-list.component.css" />
+    <Content Include="wwwroot\recruiter\recruiter-list.component.html" />
+    <Content Include="wwwroot\recruiter\recruiter.component.css" />
+    <Content Include="wwwroot\recruiter\recruiter.component.html" />
+    <Content Include="wwwroot\recruiter\recruiters-container.component.css" />
+    <Content Include="wwwroot\recruiter\recruiters-container.component.html" />
+    <Content Include="wwwroot\technology\technology-editor.component.css" />
+    <Content Include="wwwroot\technology\technology-editor.component.html" />
+    <Content Include="wwwroot\technology\technology-list.component.css" />
+    <Content Include="wwwroot\technology\technology-list.component.html" />
+    <Content Include="wwwroot\technology\technology.component.css" />
+    <Content Include="wwwroot\technology\technology.component.html" />
+    <Content Include="wwwroot\technology\technologys-container.component.css" />
+    <Content Include="wwwroot\technology\technologys-container.component.html" />
     <Content Include="wwwroot\layout\admin-container.component.css">
       <DependentUpon>admin-container.component.ts</DependentUpon>
     </Content>
@@ -310,22 +338,6 @@
     </Content>
     <Content Include="wwwroot\login\login.component.css" />
     <Content Include="wwwroot\login\login.component.html" />
-    <Content Include="wwwroot\message\message-editor.component.css" />
-    <Content Include="wwwroot\message\message-editor.component.html" />
-    <Content Include="wwwroot\message\message-list.component.css" />
-    <Content Include="wwwroot\message\message-list.component.html" />
-    <Content Include="wwwroot\message\message.component.css" />
-    <Content Include="wwwroot\message\message.component.html" />
-    <Content Include="wwwroot\message\messages-container.component.css" />
-    <Content Include="wwwroot\message\messages-container.component.html" />
-    <Content Include="wwwroot\recruiter\recruiter-editor.component.css" />
-    <Content Include="wwwroot\recruiter\recruiter-editor.component.html" />
-    <Content Include="wwwroot\recruiter\recruiter-list.component.css" />
-    <Content Include="wwwroot\recruiter\recruiter-list.component.html" />
-    <Content Include="wwwroot\recruiter\recruiter.component.css" />
-    <Content Include="wwwroot\recruiter\recruiter.component.html" />
-    <Content Include="wwwroot\recruiter\recruiters-container.component.css" />
-    <Content Include="wwwroot\recruiter\recruiters-container.component.html" />
     <Content Include="wwwroot\registration\registration-container.component.html">
       <DependentUpon>registration-container.component.ts</DependentUpon>
     </Content>
@@ -369,14 +381,6 @@
     <Content Include="wwwroot\tabs\tab-title.component.html" />
     <Content Include="wwwroot\tabs\tabs.component.css" />
     <Content Include="wwwroot\tabs\tabs.component.html" />
-    <Content Include="wwwroot\technology\technology-editor.component.css" />
-    <Content Include="wwwroot\technology\technology-editor.component.html" />
-    <Content Include="wwwroot\technology\technology-list.component.css" />
-    <Content Include="wwwroot\technology\technology-list.component.html" />
-    <Content Include="wwwroot\technology\technology.component.css" />
-    <Content Include="wwwroot\technology\technology.component.html" />
-    <Content Include="wwwroot\technology\technologys-container.component.css" />
-    <Content Include="wwwroot\technology\technologys-container.component.html" />
     <Content Include="_bin_deployableAssemblies\x86\Microsoft.VC90.CRT\Microsoft.VC90.CRT.manifest" />
     <Content Include="_bin_deployableAssemblies\x86\Microsoft.VC90.CRT\msvcr90.dll" />
     <Content Include="_bin_deployableAssemblies\x86\Microsoft.VC90.CRT\README_ENU.txt" />
@@ -593,14 +597,41 @@
     <TypeScriptCompile Include="wwwroot\header\header.service.ts" />
     <TypeScriptCompile Include="wwwroot\job\job-editor.component.ts" />
     <TypeScriptCompile Include="wwwroot\job\job-list.component.ts" />
+    <TypeScriptCompile Include="wwwroot\job\job-type.model.ts" />
     <TypeScriptCompile Include="wwwroot\job\job.actions.ts" />
     <TypeScriptCompile Include="wwwroot\job\job.component.ts" />
-    <TypeScriptCompile Include="wwwroot\job\job-type.model.ts" />
     <TypeScriptCompile Include="wwwroot\job\job.model.ts" />
     <TypeScriptCompile Include="wwwroot\job\job.module.ts" />
     <TypeScriptCompile Include="wwwroot\job\job.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\job\job.service.ts" />
     <TypeScriptCompile Include="wwwroot\job\jobs-container.component.ts" />
+    <TypeScriptCompile Include="wwwroot\message\message-editor.component.ts" />
+    <TypeScriptCompile Include="wwwroot\message\message-list.component.ts" />
+    <TypeScriptCompile Include="wwwroot\message\message.actions.ts" />
+    <TypeScriptCompile Include="wwwroot\message\message.component.ts" />
+    <TypeScriptCompile Include="wwwroot\message\message.model.ts" />
+    <TypeScriptCompile Include="wwwroot\message\message.module.ts" />
+    <TypeScriptCompile Include="wwwroot\message\message.reducers.ts" />
+    <TypeScriptCompile Include="wwwroot\message\message.service.ts" />
+    <TypeScriptCompile Include="wwwroot\message\messages-container.component.ts" />
+    <TypeScriptCompile Include="wwwroot\recruiter\recruiter-editor.component.ts" />
+    <TypeScriptCompile Include="wwwroot\recruiter\recruiter-list.component.ts" />
+    <TypeScriptCompile Include="wwwroot\recruiter\recruiter.actions.ts" />
+    <TypeScriptCompile Include="wwwroot\recruiter\recruiter.component.ts" />
+    <TypeScriptCompile Include="wwwroot\recruiter\recruiter.model.ts" />
+    <TypeScriptCompile Include="wwwroot\recruiter\recruiter.module.ts" />
+    <TypeScriptCompile Include="wwwroot\recruiter\recruiter.reducers.ts" />
+    <TypeScriptCompile Include="wwwroot\recruiter\recruiter.service.ts" />
+    <TypeScriptCompile Include="wwwroot\recruiter\recruiters-container.component.ts" />
+    <TypeScriptCompile Include="wwwroot\technology\technology-editor.component.ts" />
+    <TypeScriptCompile Include="wwwroot\technology\technology-list.component.ts" />
+    <TypeScriptCompile Include="wwwroot\technology\technology.actions.ts" />
+    <TypeScriptCompile Include="wwwroot\technology\technology.component.ts" />
+    <TypeScriptCompile Include="wwwroot\technology\technology.model.ts" />
+    <TypeScriptCompile Include="wwwroot\technology\technology.module.ts" />
+    <TypeScriptCompile Include="wwwroot\technology\technology.reducers.ts" />
+    <TypeScriptCompile Include="wwwroot\technology\technology.service.ts" />
+    <TypeScriptCompile Include="wwwroot\technology\technologys-container.component.ts" />
     <TypeScriptCompile Include="wwwroot\layout\admin-container.component.ts" />
     <TypeScriptCompile Include="wwwroot\layout\home-container.component.ts" />
     <TypeScriptCompile Include="wwwroot\layout\layout.module.ts" />
@@ -611,28 +642,10 @@
     <TypeScriptCompile Include="wwwroot\login\login.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\login\login.service.ts" />
     <TypeScriptCompile Include="wwwroot\main.ts" />
-    <TypeScriptCompile Include="wwwroot\message\message-editor.component.ts" />
-    <TypeScriptCompile Include="wwwroot\message\message-list.component.ts" />
-    <TypeScriptCompile Include="wwwroot\message\message.actions.ts" />
-    <TypeScriptCompile Include="wwwroot\message\message.component.ts" />
-    <TypeScriptCompile Include="wwwroot\message\message.model.ts" />
-    <TypeScriptCompile Include="wwwroot\message\message.module.ts" />
-    <TypeScriptCompile Include="wwwroot\message\message.reducers.ts" />
-    <TypeScriptCompile Include="wwwroot\message\message.service.ts" />
-    <TypeScriptCompile Include="wwwroot\message\messages-container.component.ts" />
     <TypeScriptCompile Include="wwwroot\modal\modal.actions.ts" />
     <TypeScriptCompile Include="wwwroot\modal\modal.module.ts" />
     <TypeScriptCompile Include="wwwroot\modal\modal.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\modal\modal.service.ts" />
-    <TypeScriptCompile Include="wwwroot\recruiter\recruiter-editor.component.ts" />
-    <TypeScriptCompile Include="wwwroot\recruiter\recruiter-list.component.ts" />
-    <TypeScriptCompile Include="wwwroot\recruiter\recruiter.actions.ts" />
-    <TypeScriptCompile Include="wwwroot\recruiter\recruiter.component.ts" />
-    <TypeScriptCompile Include="wwwroot\recruiter\recruiter.model.ts" />
-    <TypeScriptCompile Include="wwwroot\recruiter\recruiter.module.ts" />
-    <TypeScriptCompile Include="wwwroot\recruiter\recruiter.reducers.ts" />
-    <TypeScriptCompile Include="wwwroot\recruiter\recruiter.service.ts" />
-    <TypeScriptCompile Include="wwwroot\recruiter\recruiters-container.component.ts" />
     <TypeScriptCompile Include="wwwroot\registration\registration-container.component.ts" />
     <TypeScriptCompile Include="wwwroot\registration\registration.actions.ts" />
     <TypeScriptCompile Include="wwwroot\registration\registration.component.ts" />
@@ -648,15 +661,6 @@
     <TypeScriptCompile Include="wwwroot\tabs\tabs.module.ts" />
     <TypeScriptCompile Include="wwwroot\tabs\tabs.reducers.ts" />
     <TypeScriptCompile Include="wwwroot\tabs\tabs.service.ts" />
-    <TypeScriptCompile Include="wwwroot\technology\technology-editor.component.ts" />
-    <TypeScriptCompile Include="wwwroot\technology\technology-list.component.ts" />
-    <TypeScriptCompile Include="wwwroot\technology\technology.actions.ts" />
-    <TypeScriptCompile Include="wwwroot\technology\technology.component.ts" />
-    <TypeScriptCompile Include="wwwroot\technology\technology.model.ts" />
-    <TypeScriptCompile Include="wwwroot\technology\technology.module.ts" />
-    <TypeScriptCompile Include="wwwroot\technology\technology.reducers.ts" />
-    <TypeScriptCompile Include="wwwroot\technology\technology.service.ts" />
-    <TypeScriptCompile Include="wwwroot\technology\technologys-container.component.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

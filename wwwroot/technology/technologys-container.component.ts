@@ -1,5 +1,3 @@
-require("./technologys-container.component.css");
-
 import { CanActivate, ChangeDetectionStrategy, Component } from "../core";
 import * as actions from "./technology.actions";
 import { pluck } from "../core/pluck";
@@ -7,8 +5,8 @@ import { Technology } from "./technology.model";
 
 @Component({
     routes: ["/admin/technologys","/admin/technology/edit/:technologyId"],
-    templateUrl: "wwwroot/technology/technologys-container.component.html",
-    styleUrls: ["wwwroot/technology/technologys-container.component.css"],
+    template: require("./technologys-container.component.html"),
+    styles: require("./technologys-container.component.css"),
     selector: "technologys-container",
     viewProviders: ["$location","$routeParams","technologyActionCreator"],
 	changeDetection: ChangeDetectionStrategy.OnPush

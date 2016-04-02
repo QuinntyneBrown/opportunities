@@ -1,11 +1,9 @@
-require("./job.component.css");
-
 import { CanActivate, ChangeDetectionStrategy, Component } from "../core";
 import { JobActionCreator } from "./job.actions";
 
 @Component({
-    templateUrl: "wwwroot/job/job.component.html",
-	styleUrls: ["wwwroot/job/job.component.css"],
+    template: require("./job.component.html"),
+    styles: require("./job.component.css"),
     selector: "job",
     viewProviders: ["jobActionCreator"],
 	changeDetection: ChangeDetectionStrategy.OnPush

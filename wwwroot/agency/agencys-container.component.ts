@@ -1,5 +1,3 @@
-require("./agencys-container.component.css");
-
 import { CanActivate, ChangeDetectionStrategy, Component } from "../core";
 import * as actions from "./agency.actions";
 import { pluck } from "../core/pluck";
@@ -7,8 +5,8 @@ import { Agency } from "./agency.model";
 
 @Component({
     routes: ["/admin/agencys","/admin/agency/edit/:agencyId"],
-    templateUrl: "wwwroot/agency/agencys-container.component.html",
-    styleUrls: ["wwwroot/agency/agencys-container.component.css"],
+    template: require("./agencys-container.component.html"),
+    styles: require("./agencys-container.component.css"),
     selector: "agencys-container",
     viewProviders: ["$location","$routeParams","agencyActionCreator"],
 	changeDetection: ChangeDetectionStrategy.OnPush

@@ -1,5 +1,3 @@
-require("./messages-container.component.css");
-
 import { CanActivate, ChangeDetectionStrategy, Component } from "../core";
 import * as actions from "./message.actions";
 import { pluck } from "../core/pluck";
@@ -7,8 +5,8 @@ import { Message } from "./message.model";
 
 @Component({
     routes: ["/admin/messages","/admin/message/edit/:messageId"],
-    templateUrl: "wwwroot/message/messages-container.component.html",
-    styleUrls: ["wwwroot/message/messages-container.component.css"],
+    template: require("./messages-container.component.html"),
+    styles: require("./messages-container.component.css"),
     selector: "messages-container",
     viewProviders: ["$location","$routeParams","messageActionCreator"],
 	changeDetection: ChangeDetectionStrategy.OnPush

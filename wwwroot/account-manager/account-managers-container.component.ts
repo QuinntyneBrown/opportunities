@@ -1,5 +1,3 @@
-require("./account-managers-container.component.css");
-
 import { CanActivate, ChangeDetectionStrategy, Component } from "../core";
 import * as actions from "./account-manager.actions";
 import { pluck } from "../core/pluck";
@@ -7,8 +5,8 @@ import { AccountManager } from "./account-manager.model";
 
 @Component({
     routes: ["/admin/accountmanagers","/admin/accountmanager/edit/:accountManagerId"],
-    templateUrl: "wwwroot/account-manager/account-managers-container.component.html",
-    styleUrls: ["wwwroot/account-manager/account-managers-container.component.css"],
+    template: require("./account-managers-container.component.html"),
+    styles: require("./account-managers-container.component.css"),
     selector: "account-managers-container",
     viewProviders: ["$location","$routeParams","accountManagerActionCreator"],
 	changeDetection: ChangeDetectionStrategy.OnPush

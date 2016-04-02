@@ -1,11 +1,9 @@
-require("./technology.component.css");
-
 import { CanActivate, ChangeDetectionStrategy, Component } from "../core";
 import { TechnologyActionCreator } from "./technology.actions";
 
 @Component({
-    templateUrl: "wwwroot/technology/technology.component.html",
-	styleUrls: ["wwwroot/technology/technology.component.css"],
+    template: require("./technology.component.html"),
+    styles: require("./technology.component.css"),
     selector: "technology",
     viewProviders: ["technologyActionCreator"],
 	changeDetection: ChangeDetectionStrategy.OnPush

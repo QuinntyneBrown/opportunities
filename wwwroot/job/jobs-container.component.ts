@@ -1,5 +1,3 @@
-require("./jobs-container.component.css");
-
 import { CanActivate, ChangeDetectionStrategy, Component } from "../core";
 import * as actions from "./job.actions";
 import { pluck } from "../core/pluck";
@@ -7,8 +5,8 @@ import { Job } from "./job.model";
 
 @Component({
     routes: ["/admin/jobs","/admin/job/edit/:jobId"],
-    templateUrl: "wwwroot/job/jobs-container.component.html",
-    styleUrls: ["wwwroot/job/jobs-container.component.css"],
+    template: require("./jobs-container.component.html"),
+    styles: require("./jobs-container.component.css"),
     selector: "jobs-container",
     viewProviders: ["$location","$routeParams","jobActionCreator"],
 	changeDetection: ChangeDetectionStrategy.OnPush

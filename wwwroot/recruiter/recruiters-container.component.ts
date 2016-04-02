@@ -1,5 +1,3 @@
-require("./recruiters-container.component.css");
-
 import { CanActivate, ChangeDetectionStrategy, Component } from "../core";
 import * as actions from "./recruiter.actions";
 import { pluck } from "../core/pluck";
@@ -7,8 +5,8 @@ import { Recruiter } from "./recruiter.model";
 
 @Component({
     routes: ["/admin/recruiters","/admin/recruiter/edit/:recruiterId"],
-    templateUrl: "wwwroot/recruiter/recruiters-container.component.html",
-    styleUrls: ["wwwroot/recruiter/recruiters-container.component.css"],
+    template: require("./recruiters-container.component.html"),
+    styles: require("./recruiters-container.component.css"),
     selector: "recruiters-container",
     viewProviders: ["$location","$routeParams","recruiterActionCreator"],
 	changeDetection: ChangeDetectionStrategy.OnPush
